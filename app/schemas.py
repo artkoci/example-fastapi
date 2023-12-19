@@ -16,12 +16,13 @@ class PostBase(BaseModel):
     title: str
     content: str
     published: bool
-    owner: UserResponse
+    
 
 class Post(PostBase):
     id: int
     created_at: datetime
     owner_id: int
+    owner: UserResponse
 
 class PostOut(BaseModel):
     Post: Post
