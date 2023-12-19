@@ -33,6 +33,7 @@ class PostCreate(PostBase):
 class UserCreate(BaseModel):
     email: EmailStr
     password: str
+    phone_number: str
 
 class Token(BaseModel):
     access_token: str
